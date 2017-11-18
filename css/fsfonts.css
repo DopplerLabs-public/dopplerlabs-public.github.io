@@ -1,0 +1,49 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2016 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Latinotype
+ * License URL: https://www.fontspring.com/licenses/latinotype/webfont
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'textaregular';
+    src: url('/fonts/texta-regular-webfont.eot');
+    src: url('/fonts/texta-regular-webfont-iefix.eot') format('embedded-opentype'),
+         url('/fonts/texta-regular-webfont.woff2') format('woff2'),
+         url('/fonts/texta-regular-webfont.woff') format('woff'),
+         url('/fonts/texta-regular-webfont.ttf') format('truetype'),
+         url('/fonts/texta-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'textaheavy';
+    src: url('/fonts/texta-heavy-webfont.eot');
+    src: url('/fonts/texta-heavy-webfont-iefix.eot') format('embedded-opentype'),
+         url('/fonts/texta-heavy-webfont.woff2') format('woff2'),
+         url('/fonts/texta-heavy-webfont.woff') format('woff'),
+         url('/fonts/texta-heavy-webfont.ttf') format('truetype'),
+         url('/fonts/texta-heavy-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
