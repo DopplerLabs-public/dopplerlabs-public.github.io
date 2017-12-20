@@ -1,0 +1,140 @@
+---
+layout: default
+title: Download the System Update - Here One
+description: Download the System Update - Here One™
+handle: page-firmware_download
+---
+<div class="grid va-holder desktop-content">
+  <img src="/assets/firmware_download_bg2.jpg" alt="laptop and earbud case connected with wire">
+  <div class="va-item">
+    <div class="page_header dark">
+      <h1>New features now available!</h1>
+      <p>Update your Here Buds now to get the most out of Here One.</p>
+
+      <a href="/assets/HereOneUpdater_Mac.dmg" class="btn--ghost mac-content">Download for Mac</a>
+      <a href="/assets/HereOneUpdater_Windows.exe" class="btn--ghost windows-content">Download for Windows</a>
+      <p class="version">Version 1.1. Compatible with Mac OS 10.10 and above and Windows 7 &amp; 10.</p>
+    </div>
+  </div>
+</div>
+
+<div class="grid va-holder mobile-content">
+  <div class="page_header dark text-center">
+    <img src="/assets/firmware_download_step_1.png" alt="">
+    <h1>New features now available!</h1>
+    <p>Visit this page on your desktop <br /> computer to update your Here Buds.™</p>
+  </div>
+</div>
+
+<div class="wrapper desktop-content firmware-steps">
+  <div class="grid--full">
+    <ul class="firmware-steps-list text-center">
+      <li>
+        <div class="img-holder">
+          <img src="/assets/firmware_download_step_1.png" alt="">
+        </div>
+        <h3>Download</h3>
+        <p>Click the link above to download the Here One System Updater to your computer.</p>
+      </li>
+      <li>
+        <div class="img-holder">
+          <img src="/assets/firmware_download_step_2.png" alt="">
+        </div>
+        <h3>Connect</h3>
+        <p>Plug your Here Buds into your computer using the included USB cable.</p>
+      </li>
+      <li>
+        <div class="img-holder">
+          <img src="/assets/firmware_download_step_3.png" alt="">
+        </div>
+        <h3>Run</h3>
+        <p>Open and run the Here One System Updater. This may take 30-40 minutes.</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="wrapper firmware-features">
+  <div class="grid">
+    <h2 class="text-center desktop-content">This System Update includes:</h2>
+    <h2 class="text-center mobile-content">This System Update includes:</h2>
+
+    <ul class="firmware-features-list">
+      <li>
+        <h3>Fast Charge</h3>
+        <p>Charge your Here Buds back to 50% in only 15 minutes.</p>
+      </li>
+      <li>
+        <h3>Better Call Quality</h3>
+        <p>We’ve improved the quality of phone calls for both you and the person on the other end of the line. The Here Buds also automatically turn down the volume of the outside world when you receive a call, allowing you to focus on your call more easily.</p>
+      </li>
+      <li>
+        <h3>Improved Battery Life</h3>
+        <p>Enjoy about 30 additional minutes of battery life for Real-World Sound Control and about 10 more minutes for audio streaming.</p>
+      </li>
+      <li>
+        <h3>Enhanced Real-World Sound</h3>
+        <p>We’ve enhanced the natural sound of the real-world so you can hear the world more clearly when you’re using Here One.</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="wrapper firmware-help">
+  <div class="grid">
+    <div class="grid--item one-whole text-center">
+      <h2>Having Trouble?</h2>
+      <p>Please visit our <a href="https://support.hereplus.me/hc/en-us/articles/115000131894-System-Updater-Troubleshooting" target="_blank">System Update Troubleshooting</a> page for help updating your Here Buds.</p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var deviceType = false;
+  var operatingSystem = false;
+
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  if (/iPad|iPhone|iPod/i.test(userAgent) && !window.MSStream) {
+    deviceType = 'mobile';
+  }
+  else if (/android/i.test(userAgent) && !/windows phone/i.test(userAgent)) {
+    deviceType = 'mobile';
+  }
+  else if (/webOS|BlackBerry|IEMobile|Opera Mini|windows phone|WPDesktop/i.test(userAgent)) {
+    deviceType = 'mobile';
+  }
+  else {
+    deviceType = 'desktop';
+  }
+
+  var userPlatform = navigator.platform;
+  if (/Mac/i.test(userPlatform)) {
+    operatingSystem = 'mac';
+  }
+  else if(/Win/i.test(userPlatform)) {
+    operatingSystem = 'windows';
+  }
+
+  if(deviceType=="mobile"){
+    $('.mobile-content').show();
+    $('.desktop-content').hide();
+  }
+  else {
+    $('.mobile-content').hide();
+    $('.desktop-content').show();
+
+
+    if(operatingSystem=="mac"){
+      $('.mac-content').show();
+      $('.windows-content').hide();
+    }
+    else if(operatingSystem=="windows"){
+      $('.mac-content').hide();
+      $('.windows-content').show();
+    }
+    else{
+      $('.mac-content').show();
+      $('.windows-content').show();
+    }
+  }
+</script>

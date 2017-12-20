@@ -1,0 +1,50 @@
+{% include header.liquid %}
+<div class="gray-top-narrow padded-top-small">
+  <div class="wrapper">
+    <div class="grid account">
+
+      <div class="grid__item large--one-third sidebar">
+        <h3>Legal</h3>
+        <ul>
+          <li>
+            <a href="/pages/terms">Terms and Conditions</a>
+          </li>
+
+          <li>
+            <a href="/pages/privacy-policy">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="/pages/return-policy">Returns Policy</a>
+          </li>
+
+          <li>
+            <a href="/pages/warranty-policy">Warranty Policy</a>
+          </li>
+
+          <li>
+            <a href="/pages/cookie-policy">Cookie Policy</a>
+          </li>
+
+          <li>
+            <a href="/pages/compliance">Compliance</a>
+          </li>
+
+          <li>
+            <a href="/pages/environment">Environment</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="grid__item large--two-thirds">
+        <h1>{{ page.title }}</h1>
+
+        <div class="rte">
+          {{ page.content }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+{% include footer.liquid %}
